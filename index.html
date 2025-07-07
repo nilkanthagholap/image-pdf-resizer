@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free Image & PDF Resizer / Compressor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Image & PDF Resizer / Compressor</h2>
+
+    <div class="form-group">
+      <label>Employer preset (image only):</label>
+      <select id="preset">
+        <option value="">-- Select Preset --</option>
+        <option value="ssc">SSC CGL (100x120 px, 20 KB)</option>
+        <option value="upsc">UPSC (200x230 px, 40 KB)</option>
+        <option value="bank">Bank PO (150x200 px, 50 KB)</option>
+        <option value="custom">Custom</option>
+      </select>
+    </div>
+
+    <div id="imageOptions">
+      <div class="form-group">
+        <label>Width (px):</label>
+        <input type="number" id="widthInput" placeholder="Width">
+      </div>
+      <div class="form-group">
+        <label>Height (px):</label>
+        <input type="number" id="heightInput" placeholder="Height">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Max file size (KB):</label>
+      <input type="number" id="sizeInput" placeholder="e.g. 100">
+    </div>
+
+    <div class="drop-area" id="dropArea">
+      <p>Drag & drop files here or click to select</p>
+      <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.pdf" multiple>
+    </div>
+
+    <button id="processBtn">Process Files</button>
+
+    <canvas id="canvas"></canvas>
+    <div id="result"></div>
+    <div id="downloads"></div>
+  </div>
+
+  <script src="https://unpkg.com/pica/dist/pica.min.js"></script>
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
