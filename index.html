@@ -10,6 +10,15 @@
     <h2>Image & PDF Resizer / Compressor</h2>
 
     <div class="form-group">
+      <label>File type:</label>
+      <select id="fileTypeSelect">
+        <option value="">Auto detect</option>
+        <option value="image">Image</option>
+        <option value="pdf">PDF</option>
+      </select>
+    </div>
+
+    <div class="form-group" id="presetGroup">
       <label>Employer preset (image only):</label>
       <select id="preset">
         <option value="">-- Select Preset --</option>
@@ -31,7 +40,7 @@
       </div>
     </div>
 
-    <div class="form-group">
+    <div class="form-group" id="maxSizeGroup">
       <label>Max file size (KB):</label>
       <input type="number" id="sizeInput" placeholder="e.g. 100">
     </div>
