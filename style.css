@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.drop-area {
+  border: 2px dashed #007BFF;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+.drop-area.hover {
+  background: #e0f0ff;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+#canvas {
+  display: none;
+}
+
+#downloads a {
+  display: block;
+  margin-top: 5px;
+}
